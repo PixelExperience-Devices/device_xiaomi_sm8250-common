@@ -58,4 +58,21 @@
     <string name="hbm_mode_title">High Brightness Mode</string>
     <string name="hbm_mode_summary">High Brightness Mode allows the display panel brightness to go above the maximum stock value. Which helps in improving visibility in direct sunlight</string>
     <string name="hbm_enable_summary_not_supported">HBM is not currently supported by the kernel</string>
+
+    <!-- Dirac settings -->
+    <string name="dirac_title">Dirac sound enhancer</string>
+    <string name="dirac_headset_title">Headset type</string>
+    <string name="dirac_preset_title">Sound preset</string>
+
+    <!-- TODO: change the string values accordingly -->
+    <string name="dirac_headset_0">Headset 0</string>
+    <string name="dirac_headset_1">Headset 1</string>
+    <string name="dirac_headset_2">Headset 2</string>
+    <string name="dirac_headset_3">Headset 3</string>
+
+    <!-- TODO: change the string values accordingly -->
+    <string name="dirac_preset_0">Preset 0</string>
+    <string name="dirac_preset_1">Preset 1</string>
+    <string name="dirac_preset_2">Preset 2</string>
+    <string name="dirac_preset_3">Preset 3</string>
 </resources>
