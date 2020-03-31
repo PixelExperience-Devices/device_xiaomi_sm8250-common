@@ -159,6 +159,10 @@ on boot
     chmod 0664 /sys/class/power_supply/battery/dc_thermal_levels
     chown system system /sys/class/thermal/thermal_message/sconfig
 
+    # Allow system to modify exposure adjustment state
+    chown system system /sys/devices/platform/soc/soc:qcom,dsi-display-primary/msm_fb_ea_enable
+    chmod 0660 /sys/devices/platform/soc/soc:qcom,dsi-display-primary/msm_fb_ea_enable
+
     # Load all wlan drivers
     exec_background u:r:vendor_modprobe:s0 -- /vendor/bin/modprobe -a -d /vendor/lib/modules/ qca_cld3_qca6390 qca_cld3_qca6490
 
