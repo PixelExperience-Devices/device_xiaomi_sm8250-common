@@ -118,6 +118,8 @@ on post-fs-data
     mkdir /data/vendor/thermal 0771 root system
     mkdir /data/vendor/thermal/config 0771 root system
     chown gps system /dev/ttyHS1
+    # Haptics
+    write /sys/class/leds/vibrator/vmax 28
 
 on boot
     start vendor.sensors
@@ -177,6 +179,12 @@ on boot
 
 on property:persist.vendor.sys.fp.fod.large_field=1
     write sys/bus/i2c/devices/3-0049/fod_area 1
+
+on property:sys.boot_completed=1
+    # Haptics
+    write /sys/class/leds/vibrator/index 3
+    write /sys/class/leds/vibrator/duration 100
+    write /sys/class/leds/vibrator/boot_vibrator 1
 
 on boot && property:persist.vendor.usb.controller.default=*
     setprop vendor.usb.controller ${persist.vendor.usb.controller.default}
