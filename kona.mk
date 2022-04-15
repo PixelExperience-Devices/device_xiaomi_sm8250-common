@@ -309,14 +309,23 @@ PRODUCT_PACKAGES += \
     android.hardware.neuralnetworks@1.3.vendor
 
 # NFC
+PRODUCT_SOONG_NAMESPACES += \
+    vendor/nxp/opensource/sn100x
+
 PRODUCT_PACKAGES += \
-    android.hardware.nfc_snxxx@1.2-service \
     com.android.nfc_extras \
     libchrome.vendor \
-    NfcNci \
+    com.nxp.nfc.nq \
+    libnqnfc_nci_jni \
+    nfc_nci.nqx.default.hw \
+    NQNfcNci \
     SecureElement \
     Tag \
-    android.hardware.secure_element@1.2.vendor
+    android.hardware.secure_element@1.2.vendor \
+    se_nq_extn_client \
+    ls_nq_client \
+    jcos_nq_client \
+    vendor.nxp.hardware.nfc@2.0-service
 
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.nfc.ese.xml:$(TARGET_COPY_OUT_ODM)/etc/permissions/sku_nfc/android.hardware.nfc.ese.xml \
