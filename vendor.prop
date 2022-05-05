@@ -247,9 +247,6 @@ sys.fflag.override.settings_seamless_transfer=true
 persist.vendor.sensors.allow_non_default_discovery=true
 persist.vendor.sensors.sync_request=true
 
-# Shutdown
-sys.vendor.shutdown.waittime=500
-
 #Surfaceflinger
 debug.sf.enable_hwc_vds=1
 debug.sf.enable_advanced_sf_phase_offset=1
