@@ -15,12 +15,12 @@
     "repository"  : "kernel_xiaomi_sm8250",
     "target_path" : "kernel/xiaomi/sm8250",
     "remote"      : "pixel-devices",
-    "branch"      : "twelve"
+    "branch"      : "twelve-wip"
   },
   {
     "repository"  : "vendor_xiaomi_sm8250-common",
     "target_path" : "vendor/xiaomi/sm8250-common",
     "remote"      : "pixel-devices-blobs",
-    "branch"      : "twelve"
+    "branch"      : "twelve-wip"
   }
 ]
