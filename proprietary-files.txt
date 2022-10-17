@@ -17,7 +17,6 @@ vendor/lib64/com.dsi.ant@1.0.so
 
 # Audio
 vendor/lib/libacdb-fts.so
-vendor/lib/libacdbloader.so
 vendor/lib/libacdbrtac.so
 vendor/lib/libadiertac.so
 vendor/lib/libadm.so
