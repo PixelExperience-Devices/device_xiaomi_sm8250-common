@@ -10,7 +10,7 @@ interface IfaaManagerService {
     int getSupportBIOTypes();
     int startBIOManager(int authType);
     String getDeviceModel();
-    byte[] processCmd(inout byte[] param);
+    byte[] processCmd(in byte[] param);
     int getVersion();
     String getExtInfo(int authType, String keyExtInfo);
     void setExtInfo(int authType, String keyExtInfo, String valExtInfo);
