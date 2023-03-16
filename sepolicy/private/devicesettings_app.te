@@ -30,3 +30,10 @@ allow devicesettings_app {
 
 # Allow XiaomiParts to get settingsdebug.instant.packages prop
 get_prop(devicesettings_app, settingslib_prop)
+
+# dont allow devicesettings_app to access some rendering and resampling props
+# persist.input.velocitytracker.strategy
+# renderthread.skia.reduceopstasksplitting
+# ro.input.resampling
+# viewroot.profile_rendering
+dontaudit devicesettings_app default_prop:file read;
